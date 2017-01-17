@@ -1,8 +1,6 @@
 /**
  * @filename:MessageRequest.java
  *
- * Newland Co. Ltd. All rights reserved.
- *
  * @Description:rpc服务请求结构
  * @author tangjie
  * @version 1.0

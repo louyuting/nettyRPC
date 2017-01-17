@@ -24,24 +24,35 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class RpcServerLoader {
-
+    /** 单例 */
     private volatile static RpcServerLoader rpcServerLoader;
+    /** 服务器端地址IP和端口号分隔的符号 */
     private final static String DELIMITER = ":";
+    /** 序列化的协议 */
     private RpcSerializeProtocol serializeProtocol = RpcSerializeProtocol.JDKSERIALIZE;
 
+    /** 并行处理器个数 */
     private final static int parallel = Runtime.getRuntime().availableProcessors() * 2;
+
     private EventLoopGroup eventLoopGroup = new NioEventLoopGroup(parallel);
     private static ListeningExecutorService threadPoolExecutor = MoreExecutors.listeningDecorator((ThreadPoolExecutor) RpcThreadPool.getExecutor(16, -1));
     private MessageSendHandler messageSendHandler = null;
 
+    /** 细粒度的可重入锁 */
     private Lock lock = new ReentrantLock();
     private Condition connectStatus = lock.newCondition();
     private Condition handlerStatus = lock.newCondition();
 
+    /**
+     * 构造器
+     */
     private RpcServerLoader() {
+
     }
 
-    //同步原语实现单例模式
+    /**
+     * 同步原语实现单例模式
+     */
     public static RpcServerLoader getInstance() {
         if (rpcServerLoader == null) {
             synchronized (RpcServerLoader.class) {
@@ -53,11 +64,19 @@ public class RpcServerLoader {
         return rpcServerLoader;
     }
 
+    /**
+     *
+     * @param serverAddress 服务器端地址
+     * @param serializeProtocol 序列化协议
+     */
     public void load(String serverAddress, RpcSerializeProtocol serializeProtocol) {
         String[] ipAddr = serverAddress.split(RpcServerLoader.DELIMITER);
         if (ipAddr.length == 2) {
+            /** 获取IP */
             String host = ipAddr[0];
+            /** 获取端口号 */
             int port = Integer.parseInt(ipAddr[1]);
+            /** 获取socket的完整地址 */
             final InetSocketAddress remoteAddr = new InetSocketAddress(host, port);
 
             ListenableFuture<Boolean> listenableFuture = threadPoolExecutor.submit(new MessageSendInitializeTask(eventLoopGroup, remoteAddr, serializeProtocol));

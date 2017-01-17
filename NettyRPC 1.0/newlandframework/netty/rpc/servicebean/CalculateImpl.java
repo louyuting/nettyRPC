@@ -1,10 +1,7 @@
 /**
  * @filename:CalculateImpl.java
  *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:计算器定义接口实现
- * @author tangjie
+ * @Description: 计算器定义接口实现
  * @version 1.0
  *
  */

@@ -71,7 +71,7 @@ public class RpcParallelTest {
 
     public static void main(String[] args) throws Exception {
         //并行度10000
-        int parallel = 10000;
+        int parallel = 1000;
         MessageSendExecutor executor = new MessageSendExecutor();
 
         for (int i = 0; i < 10; i++) {

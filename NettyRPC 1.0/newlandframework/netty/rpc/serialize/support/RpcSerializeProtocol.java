@@ -1,10 +1,7 @@
 /**
  * @filename:RpcSerializeProtocol.java
  *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:RPC消息序序列化协议类型
- * @author tangjie
+ * @Description: RPC消息序序列化协议类型
  * @version 1.0
  *
  */

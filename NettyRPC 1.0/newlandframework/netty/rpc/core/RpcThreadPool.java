@@ -1,10 +1,7 @@
 /**
  * @filename:RpcThreadPool.java
  *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:rpc线程池封装
- * @author tangjie
+ * @Description: rpc线程池封装
  * @version 1.0
  *
  */
@@ -20,6 +17,16 @@ import java.util.concurrent.TimeUnit;
  * 自定义的线程池
  */
 public class RpcThreadPool {
+
+    /**
+     *
+     * @param threads 固定数量线程的线程池
+     * @param queues 设置线程池工作队列,  0:同步队列
+     *                                 <0 无界队列
+     *                                 >0 无界队列,指定了初始容量
+     *
+     * @return 返回指定了线程池之后的线程池执行器
+     */
     public static Executor getExecutor(int threads, int queues) {
         String name = "RpcThreadPool";
         return new ThreadPoolExecutor(threads, threads, 0, TimeUnit.MILLISECONDS,

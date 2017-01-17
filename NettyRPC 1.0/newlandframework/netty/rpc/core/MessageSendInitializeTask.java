@@ -16,9 +16,10 @@ import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
+import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
+
 import java.net.InetSocketAddress;
 import java.util.concurrent.Callable;
-import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
 
 public class MessageSendInitializeTask implements Callable<Boolean> {
 
@@ -35,7 +36,8 @@ public class MessageSendInitializeTask implements Callable<Boolean> {
     public Boolean call() {
         Bootstrap b = new Bootstrap();
         b.group(eventLoopGroup)
-                .channel(NioSocketChannel.class).option(ChannelOption.SO_KEEPALIVE, true);
+                .channel(NioSocketChannel.class)
+                .option(ChannelOption.SO_KEEPALIVE, true);
         b.handler(new MessageSendChannelInitializer().buildRpcSerializeProtocol(protocol));
 
         ChannelFuture channelFuture = b.connect(serverAddress);
