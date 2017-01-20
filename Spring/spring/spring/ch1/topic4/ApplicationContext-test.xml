@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="song1"
+          class="spring.ch1.topic4.Song">
+        <constructor-arg value="my heart will go on" />
+    </bean>
+
+    <bean id="song2"
+          class="spring.ch1.topic4.Song">
+        <constructor-arg value="there will be" />
+    </bean>
+
+    <bean id="jack"
+          class="spring.ch1.topic4.Singer">
+        <constructor-arg ref="song1" />
+    </bean>
+
+    <bean id="log"
+          class="spring.ch1.topic4.Log">
+    </bean>
+
+    <aop:config>
+        <aop:aspect ref="log">
+            <aop:pointcut id="logPointcut"
+                          expression="execution(* spring.ch1.topic4.Singer.*(..))"/>
+
+            <aop:before method="before" pointcut-ref="logPointcut"/>
+            <aop:after method="after" pointcut-ref="logPointcut"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>
