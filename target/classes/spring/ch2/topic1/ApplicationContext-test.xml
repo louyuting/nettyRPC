@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+
+
+
+
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--autowire-candidate="false" 表示通过byType注入的时候是在候选列表的-->
+    <bean id="cake"
+          class="spring.ch2.topic1.Cake"
+          p:name="blueberryCheese---Cake" scope="prototype">
+    </bean>
+
+    <bean id="cake22"
+          class="spring.ch2.topic1.Cake"
+          p:name="heheheh" scope="prototype">
+    </bean>
+
+    <bean id="jack"
+          class="spring.ch2.topic1.Chief"
+          p:name="jack" autowire="constructor">
+    </bean>
+
+   <!-- <bean id="jack"
+          class="spring.ch2.topic1.Chief"
+          p:name="jack">
+        <property name="cake" ref="cake" />
+    </bean>-->
+
+    <!--<bean id="rose"
+          class="spring.ch2.topic1.Chief"
+          autowire="byType" p:name="rose">-->
+        <!--autowire="byName"：表示当Bean的id跟注入属性的名称相一致的时候，即可注入，-->
+        <!--自动注入,byName,就是Cake对象在注入的时候，会根据属性的名称来搜查，
+        因此，这里的名字需要跟xml里面蛋糕Bean的id一样，这样才能在后面的测试里面顺利通过 -->
+
+        <!--autowire="byType"：表示当Bean的类型跟注入属性的类型相一致的时候，
+        ，也就是，当rose里面有一个属性需要注入Cake类型，
+        在配置文件里面只需要有一个bean的类型是Cake，那么，
+        系统就会自动的把bean注入到属性里面去.
+        但是有多个bean的类型是Cake,就会抛出异常.
+
+
+        -->
+    <!--</bean>-->
+
+
+</beans>

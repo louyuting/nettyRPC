@@ -2,56 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64f8b578-a4c5-455d-9f22-616dea6493d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/resource/ApplicationContext-test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic4/ApplicationContext-test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5/ApplicationContext-test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6/ApplicationContext-test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1/ApplicationContext-test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2/ApplicationContext-test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/ApplicationContext-test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/autoconfig/CDPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/autoconfig/CDPlayerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/autoconfig/CDPlayerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1/Cake.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2/Cake.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1/CakeTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2/CakeTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5/Chief.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6/Chief.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2/Chief.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5/ChiefTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6/ChiefTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic4/Log.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/Log8.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/LoginServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/LoginTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_11_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/autoconfig/MediaPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic1/Singer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic2/Singer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic3/Singer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic4/Singer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic2/SingerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic4/SingerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic1/Song.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic2/Song.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic3/Song.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic4/Song.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/User.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/resource/log4j2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/resource/soundsystem.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/利用AOP记录登陆的日志.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Spring/spring/autoconfig/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/autoconfig/CompactDisc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/autoconfig/SgtPeppers.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Spring/spring/autoconfig/CompactDisc.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/autoconfig/CompactDisc.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Spring/spring/autoconfig/SgtPeppers.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/autoconfig/SgtPeppers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC.iml" afterPath="$PROJECT_DIR$/NettyRPC.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/ApplicationContext-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/ApplicationContext-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Cake.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Cake.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Chief.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/Chief.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Chief.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/ChiefTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/ChiefTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ChiefTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Oven.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/Oven.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/ch1都是基于XML的依赖注入.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/ch2是自动注入相关的.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NettyRPC.iws" />
@@ -75,16 +40,23 @@
     <option name="SORT_CHILDREN" value="false" />
     <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideWarnings" value="true" />
-    <option name="HIDE_WARNINGS" value="true" />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="NettyRPC" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Song.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic1/Song.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18181819">
+              <caret line="4" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,21 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/serialize/support/MessageDecoder.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/serialize/support/RpcSerializeProtocol.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/servicebean/CalculateImpl.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/NamedThreadFactory.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcThreadPool.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/AbortPolicyWithReport.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcServerLoader.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendInitializeTask.java" />
-        <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/servicebean/RpcParallelTest.java" />
-        <option value="$PROJECT_DIR$/Spring/autoconfig/CompactDisc.java" />
-        <option value="$PROJECT_DIR$/Spring/resource/soundsystem.xml" />
-        <option value="$PROJECT_DIR$/Spring/resource/log4j.xml" />
-        <option value="$PROJECT_DIR$/Spring/spring/autoconfig/SgtPeppers.java" />
-        <option value="$PROJECT_DIR$/Spring/spring/autoconfig/CDPlayerConfig.java" />
-        <option value="$PROJECT_DIR$/Spring/spring/autoconfig/MediaPlayer.java" />
         <option value="$PROJECT_DIR$/Spring/spring/autoconfig/CDPlayer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Spring/spring/autoconfig/CDPlayerTest.java" />
@@ -156,6 +113,21 @@
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/Log8.java" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/ApplicationContext-test.xml" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/LoginTest.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/CakeTest.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Cake.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Oven.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/ApplicationContext-test.xml" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/ChiefTest.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Chief.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/Oven.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/Chief.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/ApplicationContext-test.xml" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/ChiefTest.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Oven.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Cake.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Chief.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ChiefTest.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml" />
       </list>
     </option>
   </component>
@@ -196,9 +168,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="23" />
-    <option name="width" value="806" />
+    <option name="x" value="-19" />
+    <option name="y" value="29" />
+    <option name="width" value="931" />
     <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -234,13 +206,115 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ch1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="topic1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NettyRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13000977" />
@@ -258,129 +332,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1" />
+      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12" />
+      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11" />
       <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8" />
       <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2" />
-      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1" />
-      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6" />
-      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Spring/" />
       <recent name="$PROJECT_DIR$/spring/spring" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="spring.ch2.topic1" />
+      <recent name="spring.ch1.topic12" />
       <recent name="spring.ch1.topic8" />
       <recent name="spring.ch1.topic7_2" />
       <recent name="spring.ch1.topic7_1" />
-      <recent name="spring.ch1.topic5" />
-      <recent name="spring.ch1.topic4" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.testLogin">
-    <configuration default="false" name="ChiefTest.testSinger (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="spring.ch1.topic6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="NettyRPC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="spring.ch1.topic6" />
-      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic6.ChiefTest" />
-      <option name="METHOD_NAME" value="testSinger" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CakeTest.testSinger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="spring.ch1.topic7_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="NettyRPC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="spring.ch1.topic7_1" />
-      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic7_1.CakeTest" />
-      <option name="METHOD_NAME" value="testSinger" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CakeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="spring.ch1.topic7_1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="NettyRPC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="spring.ch1.topic7_1" />
-      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic7_1.CakeTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CakeTest.testSinger (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="spring.ch1.topic7_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="NettyRPC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="spring.ch1.topic7_2" />
-      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic7_2.CakeTest" />
-      <option name="METHOD_NAME" value="testSinger" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ChiefTest.testChief (2)">
     <configuration default="false" name="LoginTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -394,6 +364,110 @@
       <option name="PACKAGE_NAME" value="spring.ch1.topic8" />
       <option name="MAIN_CLASS_NAME" value="spring.ch1.topic8.LoginTest" />
       <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChiefTest.testSinger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="spring.ch1.topic11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NettyRPC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="spring.ch1.topic11" />
+      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic11.ChiefTest" />
+      <option name="METHOD_NAME" value="testSinger" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChiefTest.testChief" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="spring.ch1.topic11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NettyRPC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="spring.ch1.topic11" />
+      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic11.ChiefTest" />
+      <option name="METHOD_NAME" value="testChief" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChiefTest.testChief (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="spring.ch1.topic12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NettyRPC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="spring.ch1.topic12" />
+      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic12.ChiefTest" />
+      <option name="METHOD_NAME" value="testChief" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChiefTest.testChief (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="spring.ch2.topic1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NettyRPC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="spring.ch2.topic1" />
+      <option name="MAIN_CLASS_NAME" value="spring.ch2.topic1.ChiefTest" />
+      <option name="METHOD_NAME" value="testChief" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -668,19 +742,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ChiefTest.testSinger (1)" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CakeTest.testSinger" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CakeTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CakeTest.testSinger (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ChiefTest.testSinger" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CakeTest.testSinger (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CakeTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CakeTest.testSinger" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ChiefTest.testSinger (1)" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (2)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ChiefTest.testSinger" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -703,36 +777,36 @@
       <workItem from="1484619437813" duration="2385000" />
       <workItem from="1484621874409" duration="3299000" />
       <workItem from="1484634661485" duration="1064000" />
-      <workItem from="1484894704085" duration="9209000" />
+      <workItem from="1484894704085" duration="17549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30192000" />
+    <option name="totallyTimeSpent" value="38532000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="23" width="806" height="773" extended-state="0" />
-    <editor active="false" />
+    <frame x="-19" y="29" width="931" height="773" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37370753" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37269938" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44325152" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="92" y="127" width="1079" height="573" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44313148" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="92" y="127" width="1079" height="573" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16233766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37576687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46528804" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27176782" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2355606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.037617553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -762,7 +836,7 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -771,120 +845,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/autoconfig/MediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/autoconfig/CDPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32248062">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/AbortPolicyWithReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageRecvExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageRecvChannelInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageCallBack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendInitializeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendChannelInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/NamedThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcRecvSerializeFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcServerLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcServerKryoProtocolStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/config/rpc-server-jdknative.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.024806201">
@@ -914,17 +874,6 @@
         <state vertical-scroll-proportion="0.27286822">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="33" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic1/Song.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#135#136#0" expanded="false" />
-            <element signature="e#172#173#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,6 +1194,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Oven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#201#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Cake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/Chief.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18654434">
+          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/ChiefTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44036698">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/Oven.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/ApplicationContext-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9082569">
+          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/Chief.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48929664">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#815#816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic12/ChiefTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44036698">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic11/ApplicationContext-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.25688073">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/ch1都是基于XML的依赖注入.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/ch2是自动注入相关的.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Cake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26086956">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Chief.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41257367">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#234#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ChiefTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36363637">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3181818">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic1/Song.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18181819">
+          <caret line="4" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1323,6 +1422,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
