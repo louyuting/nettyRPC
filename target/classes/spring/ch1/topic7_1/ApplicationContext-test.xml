@@ -10,7 +10,6 @@
         <property name="name" value="Blueberry Cheesecake"/>
         <property name="size" value="7"/>
 
-
     </bean>
 
 </beans>

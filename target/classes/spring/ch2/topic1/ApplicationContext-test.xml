@@ -4,9 +4,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
 
-
-
-
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--autowire-candidate="false" 表示通过byType注入的时候是在候选列表的-->
@@ -17,19 +14,23 @@
 
     <bean id="cake22"
           class="spring.ch2.topic1.Cake"
-          p:name="heheheh" scope="prototype">
+          p:name="heheheh" scope="prototype" autowire-candidate="false">
     </bean>
+
+    <!--<bean id="jack"
+          class="spring.ch2.topic1.Chief"
+          p:name="jack" autowire="constructor">
+    </bean>-->
 
     <bean id="jack"
           class="spring.ch2.topic1.Chief"
-          p:name="jack" autowire="constructor">
-    </bean>
-
-   <!-- <bean id="jack"
-          class="spring.ch2.topic1.Chief"
           p:name="jack">
         <property name="cake" ref="cake" />
-    </bean>-->
+    </bean>
+    <bean id="rose"
+          class="spring.ch2.topic1.Chief"
+          autowire="byType" p:name="rose">
+    </bean>
 
     <!--<bean id="rose"
           class="spring.ch2.topic1.Chief"

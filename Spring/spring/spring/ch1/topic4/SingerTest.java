@@ -23,7 +23,4 @@ public class SingerTest {
         Singer singer = (Singer)applicationContext.getBean("jack");
         singer.singSong();
     }
-
-
-
 }

@@ -18,15 +18,11 @@ public class CakeTest {
     private ApplicationContext applicationContext;
 
     @Test
-    public void testSinger(){
+    public void testCake(){
         Cake cake = (Cake)applicationContext.getBean("cake");
         System.out.println(cake.getId());
         System.out.println(cake.getName());
         System.out.println(cake.getSize());
     }
 
-    /**
-     *  //output ~:
-     *
-     */
 }

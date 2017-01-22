@@ -14,5 +14,3 @@ public class Chief {
         return id;
     }
 }
-
-

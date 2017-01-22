@@ -21,8 +21,8 @@ public class ChiefTest {
     public void testChief(){
         Chief jack = (Chief)applicationContext.getBean("jack");
         jack.makeOneCake();
-        /*Chief rose = (Chief)applicationContext.getBean("rose");
-        rose.makeOneCake();*/
+        Chief rose = (Chief)applicationContext.getBean("rose");
+        rose.makeOneCake();
     }
 
 }

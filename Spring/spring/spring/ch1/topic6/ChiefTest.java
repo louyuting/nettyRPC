@@ -20,10 +20,7 @@ public class ChiefTest {
     public void testSinger(){
         Chief chief = (Chief)applicationContext.getBean("chief");
         System.out.println("chief id=" + chief.getId());
+        System.gc();
     }
 
-    /**
-     *  //output ~ s
-     *
-     */
 }

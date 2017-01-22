@@ -15,6 +15,4 @@
     <bean id="chief"
           class="spring.ch1.topic5.Chief" scope="prototype">
     </bean>
-
-
 </beans>

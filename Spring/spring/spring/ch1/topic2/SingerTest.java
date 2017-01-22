@@ -20,8 +20,10 @@ public class SingerTest {
 
     @Test
     public void testSinger(){
-        Singer singer = (Singer)applicationContext.getBean("singer1");
-        singer.singSong();
+        Singer jack = (Singer)applicationContext.getBean("jack");
+        jack.singSong();
+        Singer rose = (Singer)applicationContext.getBean("rose");
+        rose.singSong();
     }
 
 

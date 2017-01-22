@@ -21,7 +21,12 @@
         <constructor-arg value="there will be" />
     </bean>
 
-    <bean id="singer1"
+    <bean id="jack"
+          class="spring.ch1.topic2.Singer">
+        <constructor-arg ref="song1" />
+    </bean>
+
+    <bean id="rose"
           class="spring.ch1.topic2.Singer">
         <constructor-arg ref="song2" />
     </bean>
