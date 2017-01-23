@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64f8b578-a4c5-455d-9f22-616dea6493d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ch1/topic7_1/CakeTest.class" afterPath="$PROJECT_DIR$/target/classes/spring/ch1/topic7_1/CakeTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ch1/topic6/ChiefTest.class" afterPath="$PROJECT_DIR$/target/classes/spring/ch1/topic6/ChiefTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ch1/topic2/SingerTest.class" afterPath="$PROJECT_DIR$/target/classes/spring/ch1/topic2/SingerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/resource/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/Spring/resource/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/target/classes/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ch1/topic5/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/target/classes/spring/ch1/topic5/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ch1/topic6/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/target/classes/spring/ch1/topic6/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ch1/topic7_1/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/target/classes/spring/ch1/topic7_1/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ch1/topic7_2/ApplicationContext-test.xml" afterPath="$PROJECT_DIR$/target/classes/spring/ch1/topic7_2/ApplicationContext-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1/CakeTest.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_1/CakeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5/Chief.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic5/Chief.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Chief.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Chief.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6/ChiefTest.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic6/ChiefTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ChiefTest.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ChiefTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic2/SingerTest.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic2/SingerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic4/SingerTest.java" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch1/topic4/SingerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ApplicationContext-test.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/Cake.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/Chief.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ChiefTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NettyRPC.iws" />
@@ -53,49 +36,53 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Cake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Cake.java">
+        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/Cake.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chief.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Chief.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#199#200#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContext-test.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml">
+      <file leaf-file-name="Chief.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/Chief.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36">
-              <caret line="22" column="11" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="11" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#715#716#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChiefTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ChiefTest.java">
+      <file leaf-file-name="ChiefTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ChiefTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5859375">
+              <caret line="15" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext-test.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ApplicationContext-test.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
+              <caret line="12" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,9 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Spring/spring/autoconfig/CDPlayer.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Spring/spring/autoconfig/CDPlayerTest.java" />
         <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/config/rpc-invoke-config-jdknative.xml" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic1/Song.java" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch1/topic1/Singer.java" />
@@ -173,6 +157,9 @@
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/Chief.java" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ChiefTest.java" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ChiefTest.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/Chief.java" />
+        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ApplicationContext-test.xml" />
       </list>
     </option>
   </component>
@@ -241,7 +228,6 @@
       <sortByType ProjectPane="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -312,7 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topic1" />
+              <option name="myItemId" value="topic2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,10 +342,11 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13000977" />
@@ -377,11 +364,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch2/topic2" />
       <recent name="$PROJECT_DIR$/Spring/spring/spring/ch2/topic1" />
       <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic12" />
       <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic11" />
       <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic8" />
-      <recent name="$PROJECT_DIR$/Spring/spring/spring/ch1/topic7_2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Spring/" />
@@ -395,33 +382,7 @@
       <recent name="spring.ch1.topic7_1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChiefTest.testChief (2)">
-    <configuration default="false" name="CakeTest.testSinger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="spring.ch1.topic7_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="NettyRPC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="spring.ch1.topic7_2" />
-      <option name="MAIN_CLASS_NAME" value="spring.ch1.topic7_2.CakeTest" />
-      <option name="METHOD_NAME" value="testSinger" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ChiefTest.testChief (3)">
     <configuration default="false" name="LoginTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -512,6 +473,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="spring.ch2.topic1" />
       <option name="MAIN_CLASS_NAME" value="spring.ch2.topic1.ChiefTest" />
+      <option name="METHOD_NAME" value="testChief" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChiefTest.testChief (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="spring.ch2.topic2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="NettyRPC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="spring.ch2.topic2" />
+      <option name="MAIN_CLASS_NAME" value="spring.ch2.topic2.ChiefTest" />
       <option name="METHOD_NAME" value="testChief" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -787,19 +774,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CakeTest.testSinger" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (2)" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (2)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (3)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (2)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CakeTest.testSinger" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (3)" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (2)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ChiefTest.testChief" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.testLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -823,16 +810,17 @@
       <workItem from="1484621874409" duration="3299000" />
       <workItem from="1484634661485" duration="1064000" />
       <workItem from="1484894704085" duration="27393000" />
-      <workItem from="1485064004049" duration="2487000" />
+      <workItem from="1485064004049" duration="2766000" />
+      <workItem from="1485136385992" duration="2936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50863000" />
+    <option name="totallyTimeSpent" value="54078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="23" width="1248" height="773" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -840,9 +828,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52141804" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="92" y="127" width="1079" height="573" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16233766" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3988183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38552436" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -856,7 +845,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Documentation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44313148" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="92" y="127" width="1079" height="573" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20998532" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -883,34 +871,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/config/rpc-server-jdknative.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.024806201">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/config/rpc-invoke-config-hessian.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24806201">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/config/rpc-invoke-config-kryo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/config/rpc-invoke-config-jdknative.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27286822">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch1/topic8/利用AOP记录登陆的日志.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -957,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0190217">
           <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,9 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1179,7 +1135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1187,9 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.64469916">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1197,7 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1205,7 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6976744">
           <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,7 +1163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39534885">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1221,7 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5813953">
           <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1260,9 +1208,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic1/ApplicationContext-test.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36">
-          <caret line="22" column="11" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/Cake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/Chief.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ApplicationContext-test.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Spring/spring/spring/ch2/topic2/ChiefTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5859375">
+          <caret line="15" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
