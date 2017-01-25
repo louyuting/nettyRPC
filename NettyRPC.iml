@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/NettyRPC 1.0" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Spring/spring" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Spring/resource" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/guava/guava" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />

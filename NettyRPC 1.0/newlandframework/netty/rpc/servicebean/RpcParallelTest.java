@@ -1,13 +1,3 @@
-/**
- * @filename:RpcParallelTest.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:rpc并发测试代码
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.servicebean;
 
 import newlandframework.netty.rpc.core.MessageSendExecutor;
@@ -17,6 +7,10 @@ import org.apache.commons.lang3.time.StopWatch;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+
+/**
+ * rpc并发测试代码
+ */
 public class RpcParallelTest {
 
     public static void parallelTask(MessageSendExecutor executor, int parallel, String serverAddress, RpcSerializeProtocol protocol) throws InterruptedException {

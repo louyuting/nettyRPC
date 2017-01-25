@@ -1,13 +1,3 @@
-/**
- * @filename:RpcSendSerializeFrame.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:RPC客户端消息序列化协议框架
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import io.netty.channel.ChannelPipeline;
@@ -27,6 +17,9 @@ import newlandframework.netty.rpc.serialize.support.kryo.KryoPoolFactory;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeFrame;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
 
+/**
+ * RPC 客户端消息序列化协议框架
+ */
 public class RpcSendSerializeFrame implements RpcSerializeFrame {
 
     public void select(RpcSerializeProtocol protocol, ChannelPipeline pipeline) {

@@ -1,20 +1,14 @@
-/**
- * @filename:MessageSendProxy.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:Rpc客户端消息处理
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
+
+import com.google.common.reflect.AbstractInvocationHandler;
+import newlandframework.netty.rpc.model.MessageRequest;
 
 import java.lang.reflect.Method;
 import java.util.UUID;
-import newlandframework.netty.rpc.model.MessageRequest;
-import com.google.common.reflect.AbstractInvocationHandler;
 
+/**
+ * @Description:Rpc客户端消息处理
+ */
 public class MessageSendProxy<T> extends AbstractInvocationHandler {
 
     public Object handleInvocation(Object proxy, Method method, Object[] args) throws Throwable {

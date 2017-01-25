@@ -1,13 +1,3 @@
-/**
- * @filename:RpcRecvSerializeFrame.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:RPC服务端消息序列化协议框架
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import io.netty.channel.ChannelPipeline;
@@ -16,7 +6,6 @@ import io.netty.handler.codec.LengthFieldPrepender;
 import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
-import java.util.Map;
 import newlandframework.netty.rpc.serialize.support.MessageCodecUtil;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeFrame;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
@@ -28,6 +17,11 @@ import newlandframework.netty.rpc.serialize.support.kryo.KryoDecoder;
 import newlandframework.netty.rpc.serialize.support.kryo.KryoEncoder;
 import newlandframework.netty.rpc.serialize.support.kryo.KryoPoolFactory;
 
+import java.util.Map;
+
+/**
+ * RPC 服务端消息序列化协议框架
+ */
 public class RpcRecvSerializeFrame implements RpcSerializeFrame {
 
     private Map<String, Object> handlerMap = null;
@@ -36,13 +30,22 @@ public class RpcRecvSerializeFrame implements RpcSerializeFrame {
         this.handlerMap = handlerMap;
     }
 
+    /**
+     * 根据序列化协议,选择管道的handler
+     * @param protocol
+     * @param pipeline
+     */
     public void select(RpcSerializeProtocol protocol, ChannelPipeline pipeline) {
         switch (protocol) {
             case JDKSERIALIZE: {
+                /** netty提供的默认解码器,解决TCP的黏包问题 */
                 pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, MessageCodecUtil.MESSAGE_LENGTH, 0, MessageCodecUtil.MESSAGE_LENGTH));
+                /** netty提供的默认解码器 */
                 pipeline.addLast(new LengthFieldPrepender(MessageCodecUtil.MESSAGE_LENGTH));
+                /** netty提供的默认解码器,JDK原生序列化编解码器 */
                 pipeline.addLast(new ObjectEncoder());
                 pipeline.addLast(new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.weakCachingConcurrentResolver(this.getClass().getClassLoader())));
+                /** RPC 服务端的handler */
                 pipeline.addLast(new MessageRecvHandler(handlerMap));
                 break;
             }

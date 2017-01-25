@@ -1,24 +1,18 @@
-/**
- * @filename:MessageRecvChannelInitializer.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:Rpc服务端管道初始化
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
-import java.util.Map;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
 
+import java.util.Map;
+
+/**
+ * Rpc服务端管道初始化
+ */
 public class MessageRecvChannelInitializer extends ChannelInitializer<SocketChannel> {
 
-    private RpcSerializeProtocol protocol;
+    private RpcSerializeProtocol protocol;//枚举类型:表示使用的序列化协议
     private RpcRecvSerializeFrame frame = null;
 
     MessageRecvChannelInitializer buildRpcSerializeProtocol(RpcSerializeProtocol protocol) {
@@ -26,6 +20,10 @@ public class MessageRecvChannelInitializer extends ChannelInitializer<SocketChan
         return this;
     }
 
+    /**
+     * 构造器
+     * @param handlerMap
+     */
     MessageRecvChannelInitializer(Map<String, Object> handlerMap) {
         frame = new RpcRecvSerializeFrame(handlerMap);
     }

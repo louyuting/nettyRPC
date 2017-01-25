@@ -1,13 +1,3 @@
-/**
- * @filename:MessageRecvInitializeTask.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:Rpc服务器消息线程任务处理
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import io.netty.channel.ChannelHandlerContext;
@@ -18,6 +8,9 @@ import org.apache.commons.lang3.reflect.MethodUtils;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
+/**
+ * Rpc服务器消息线程任务处理
+ */
 public class MessageRecvInitializeTask implements Callable<Boolean> {
 
     private MessageRequest request = null;
@@ -28,15 +21,19 @@ public class MessageRecvInitializeTask implements Callable<Boolean> {
     public MessageResponse getResponse() {
         return response;
     }
-
     public MessageRequest getRequest() {
         return request;
     }
-
     public void setRequest(MessageRequest request) {
         this.request = request;
     }
 
+    /**
+     * 构造器
+     * @param request
+     * @param response
+     * @param handlerMap
+     */
     MessageRecvInitializeTask(MessageRequest request, MessageResponse response, Map<String, Object> handlerMap) {
         this.request = request;
         this.response = response;
@@ -58,11 +55,22 @@ public class MessageRecvInitializeTask implements Callable<Boolean> {
         }
     }
 
+    /**
+     * 反射
+     * @param request
+     * @return
+     * @throws Throwable
+     */
     private Object reflect(MessageRequest request) throws Throwable {
+        //获取类名
         String className = request.getClassName();
+        //根据类名,获取类名在服务器映射的类信息
         Object serviceBean = handlerMap.get(className);
+        //获取方法名
         String methodName = request.getMethodName();
+        //获取参数值数组
         Object[] parameters = request.getParameters();
+        //反射执行,获取resopnse的result
         return MethodUtils.invokeMethod(serviceBean, methodName, parameters);
     }
 }

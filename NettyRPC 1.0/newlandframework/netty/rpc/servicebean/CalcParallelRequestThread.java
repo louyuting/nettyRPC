@@ -1,13 +1,3 @@
-/**
- * @filename:CalcParallelRequestThread.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:并发线程模拟
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.servicebean;
 
 import newlandframework.netty.rpc.core.MessageSendExecutor;
@@ -15,6 +5,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * @Description:并发线程模拟
+ */
 public class CalcParallelRequestThread implements Runnable {
 
     private CountDownLatch signal;

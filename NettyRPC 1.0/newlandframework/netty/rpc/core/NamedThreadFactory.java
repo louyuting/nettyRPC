@@ -1,15 +1,12 @@
-/**
- * @filename:NamedThreadFactory.java
- *
- * @Description: 线程工厂:实际上就是对Runable进行一个包装,对线程设置一些信息和监控信息
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
+
+/**
+ * @Description: 线程工厂:实际上就是对Runable进行一个包装,对线程设置一些信息和监控信息
+ */
 public class NamedThreadFactory implements ThreadFactory {
 
     private static final AtomicInteger threadNumber = new AtomicInteger(1);
@@ -17,12 +14,11 @@ public class NamedThreadFactory implements ThreadFactory {
     private final AtomicInteger mThreadNum = new AtomicInteger(1);
 
     private final String prefix;
-
     /** 是否是后台线程 */
     private final boolean daemoThread;
-
     /** 线程组 */
     private final ThreadGroup threadGroup;
+
 
     /**
      * 构造器
@@ -47,6 +43,8 @@ public class NamedThreadFactory implements ThreadFactory {
         SecurityManager s = System.getSecurityManager();
         threadGroup = (s == null) ? Thread.currentThread().getThreadGroup() : s.getThreadGroup();
     }
+
+
 
     /**
      * 核心函数:新建一个线程

@@ -1,13 +1,3 @@
-/**
- * @filename:MessageSendChannelInitializer.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:Rpc客户端管道初始化
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import io.netty.channel.ChannelInitializer;
@@ -15,6 +5,9 @@ import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
 
+/**
+ * Rpc 客户端管道初始化
+ */
 public class MessageSendChannelInitializer extends ChannelInitializer<SocketChannel> {
 
     private RpcSerializeProtocol protocol;

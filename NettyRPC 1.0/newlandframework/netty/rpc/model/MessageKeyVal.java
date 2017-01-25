@@ -1,17 +1,15 @@
 /**
  * @filename:MessageKeyVal.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:rpc服务映射容器
- * @author tangjie
+ * @Description:rpc 服务映射容器
  * @version 1.0
- *
  */
 package newlandframework.netty.rpc.model;
 
 import java.util.Map;
 
+/**
+ * 服务器端RPC接口定义和RPC接口实现类对象的映射关系
+ */
 public class MessageKeyVal {
 
     private Map<String, Object> messageKeyVal;

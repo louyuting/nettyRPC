@@ -15,7 +15,10 @@ public enum RpcSerializeProtocol {
     JDKSERIALIZE("jdknative"), KRYOSERIALIZE("kryo"), HESSIANSERIALIZE("hessian");
 
     private String serializeProtocol;
-
+    /**
+     * 构造器
+     * @param serializeProtocol
+     */
     private RpcSerializeProtocol(String serializeProtocol) {
         this.serializeProtocol = serializeProtocol;
     }

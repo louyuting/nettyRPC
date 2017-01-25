@@ -1,10 +1,7 @@
 /**
  * @filename:MessageResponse.java
  *
- * Newland Co. Ltd. All rights reserved.
- *
  * @Description:rpc服务应答结构
- * @author tangjie
  * @version 1.0
  *
  */
@@ -14,6 +11,9 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import java.io.Serializable;
 
+/**
+ * 响应的请求体
+ */
 public class MessageResponse implements Serializable {
 
     private String messageId;//消息ID

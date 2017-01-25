@@ -1,37 +1,10 @@
-/**
- * @filename:MessageRecvExecutor.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:Rpc服务器执行模块
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
-import com.google.common.util.concurrent.FutureCallback;
-import com.google.common.util.concurrent.Futures;
-import com.google.common.util.concurrent.ListenableFuture;
-import com.google.common.util.concurrent.ListeningExecutorService;
-import com.google.common.util.concurrent.MoreExecutors;
+import com.google.common.util.concurrent.*;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import java.nio.channels.spi.SelectorProvider;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.logging.Level;
 import newlandframework.netty.rpc.model.MessageKeyVal;
 import newlandframework.netty.rpc.model.MessageRequest;
 import newlandframework.netty.rpc.model.MessageResponse;
@@ -41,23 +14,53 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+import java.nio.channels.spi.SelectorProvider;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.logging.Level;
+
+/**
+ * 服务器执行模块
+ */
 public class MessageRecvExecutor implements ApplicationContextAware, InitializingBean {
 
+    /** 服务端IP地址, Spring注入 */
     private String serverAddress;
+    /** 服务端序列化使用的协议,默认是JDK原生序列化, Spring注入 */
     private RpcSerializeProtocol serializeProtocol = RpcSerializeProtocol.JDKSERIALIZE;
-
+    /** 分隔符 */
     private final static String DELIMITER = ":";
-
+    /** 服务端处理请求体的Map */
     private Map<String, Object> handlerMap = new ConcurrentHashMap<String, Object>();
-
+    /** 线程执行器,单例 */
     private static ListeningExecutorService threadPoolExecutor;
 
+    /**
+     * 构造器
+     * @param serverAddress
+     * @param serializeProtocol
+     */
     public MessageRecvExecutor(String serverAddress, String serializeProtocol) {
         this.serverAddress = serverAddress;
         this.serializeProtocol = Enum.valueOf(RpcSerializeProtocol.class, serializeProtocol);
     }
 
+    /**
+     * 提交任务
+     * @param task
+     * @param ctx
+     * @param request
+     * @param response
+     */
     public static void submit(Callable<Boolean> task, ChannelHandlerContext ctx, MessageRequest request, MessageResponse response) {
+        /**
+         * 这里用到了 DCL 实现单例模式
+         */
         if (threadPoolExecutor == null) {
             synchronized (MessageRecvExecutor.class) {
                 if (threadPoolExecutor == null) {
@@ -67,6 +70,7 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
         }
 
         ListenableFuture<Boolean> listenableFuture = threadPoolExecutor.submit(task);
+
         Futures.addCallback(listenableFuture, new FutureCallback<Boolean>() {
             public void onSuccess(Boolean result) {
                 ctx.writeAndFlush(response).addListener(new ChannelFutureListener() {
@@ -82,9 +86,21 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
         }, threadPoolExecutor);
     }
 
+    /**
+     * 当初始化Spring容器的时候会被调用, ApplicationContextAware包装接口中的方法在这里重载,
+     * 在afterPropertiesSet()方法之前被调用.
+     * 主要功能: 将容器中请求与实现类的映射关系存入 ConcurrentHashMap并发容器的Map中
+     * @param ctx
+     * @throws BeansException
+     */
+    @Override
     public void setApplicationContext(ApplicationContext ctx) throws BeansException {
+
+
         try {
+            /**获取 MessageKeyVal 实例*/
             MessageKeyVal keyVal = (MessageKeyVal) ctx.getBean(Class.forName("newlandframework.netty.rpc.model.MessageKeyVal"));
+            /**获取Map映射关系*/
             Map<String, Object> rpcServiceObject = keyVal.getMessageKeyVal();
 
             Set s = rpcServiceObject.entrySet();
@@ -100,11 +116,20 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
         }
     }
 
+
+    /**
+     * 重载InitializingBean里面的方法, 当他被BeanFactory调用
+     * 在setApplicationContext()方法之后被调用
+     * 主要功能: 启动netty服务端
+     * @throws Exception
+     */
+    @Override
     public void afterPropertiesSet() throws Exception {
         ThreadFactory threadRpcFactory = new NamedThreadFactory("NettyRPC ThreadFactory");
 
+        //获取机器的CPU数量 * 2 设置并行数
         int parallel = Runtime.getRuntime().availableProcessors() * 2;
-
+        /** 主从线程池,boss线程池是一个线程, worker线程池是parallel */
         EventLoopGroup boss = new NioEventLoopGroup();
         EventLoopGroup worker = new NioEventLoopGroup(parallel, threadRpcFactory, SelectorProvider.provider());
 
@@ -120,6 +145,7 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
             if (ipAddr.length == 2) {
                 String host = ipAddr[0];
                 int port = Integer.parseInt(ipAddr[1]);
+                /**异步启动服务器*/
                 ChannelFuture future = bootstrap.bind(host, port).sync();
                 System.out.printf("[author tangjie] Netty RPC Server start success!\nip:%s\nport:%d\nprotocol:%s\n\n", host, port, serializeProtocol);
                 future.channel().closeFuture().sync();

@@ -51,7 +51,7 @@ public class RpcServerLoader {
     }
 
     /**
-     * 同步原语实现单例模式
+     * DCL 实现单例模式
      */
     public static RpcServerLoader getInstance() {
         if (rpcServerLoader == null) {

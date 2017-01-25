@@ -1,13 +1,3 @@
-/**
- * @filename:MessageSendInitializeTask.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:Rpc客户端线程任务处理
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import io.netty.bootstrap.Bootstrap;
@@ -21,18 +11,34 @@ import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
 import java.net.InetSocketAddress;
 import java.util.concurrent.Callable;
 
+/**
+ * @Description:Rpc客户端线程任务处理
+ * 本质是就是一个 Callable
+ */
 public class MessageSendInitializeTask implements Callable<Boolean> {
 
     private EventLoopGroup eventLoopGroup = null;
     private InetSocketAddress serverAddress = null;
     private RpcSerializeProtocol protocol;
 
+    /**
+     * 构造器
+     * @param eventLoopGroup
+     * @param serverAddress
+     * @param protocol
+     */
     MessageSendInitializeTask(EventLoopGroup eventLoopGroup, InetSocketAddress serverAddress, RpcSerializeProtocol protocol) {
         this.eventLoopGroup = eventLoopGroup;
         this.serverAddress = serverAddress;
         this.protocol = protocol;
     }
 
+    /**
+     * 客户端task 的执行函数
+     * 也就是向服务端发送一个RPC请求
+     * @return
+     */
+    @Override
     public Boolean call() {
         Bootstrap b = new Bootstrap();
         b.group(eventLoopGroup)

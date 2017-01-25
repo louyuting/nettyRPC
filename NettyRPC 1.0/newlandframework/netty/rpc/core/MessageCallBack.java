@@ -1,36 +1,39 @@
-/**
- * @filename:MessageCallBack.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:Rpc消息回调
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
+
+import newlandframework.netty.rpc.model.MessageRequest;
+import newlandframework.netty.rpc.model.MessageResponse;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import newlandframework.netty.rpc.model.MessageRequest;
-import newlandframework.netty.rpc.model.MessageResponse;
 
+/**
+ * @Description:Rpc消息回调
+ */
 public class MessageCallBack {
 
     private MessageRequest request;
     private MessageResponse response;
-    private Lock lock = new ReentrantLock();
+    private Lock lock = new ReentrantLock();//显式锁:可重入锁
     private Condition finish = lock.newCondition();
 
+    /**
+     * 构造器
+     * @param request
+     */
     public MessageCallBack(MessageRequest request) {
         this.request = request;
     }
 
+    /**
+     * 开始处理request
+     * @return
+     * @throws InterruptedException
+     */
     public Object start() throws InterruptedException {
         try {
-            lock.lock();
+            lock.lock();//加锁
             finish.await(10*1000, TimeUnit.MILLISECONDS);
             if (this.response != null) {
                 return this.response.getResult();
@@ -42,10 +45,14 @@ public class MessageCallBack {
         }
     }
 
+    /**
+     * over
+     * @param reponse
+     */
     public void over(MessageResponse reponse) {
         try {
             lock.lock();
-            finish.signal();
+            finish.signal();//唤醒
             this.response = reponse;
         } finally {
             lock.unlock();

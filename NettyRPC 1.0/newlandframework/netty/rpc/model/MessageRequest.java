@@ -1,7 +1,7 @@
 /**
  * @filename:MessageRequest.java
  *
- * @Description:rpc服务请求结构
+ * @Description:rpc 服务请求结构
  * @author tangjie
  * @version 1.0
  *
@@ -13,6 +13,9 @@ import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 
 import java.io.Serializable;
 
+/**
+ * 消息的请求体
+ */
 public class MessageRequest implements Serializable {
 
     private String messageId;//消息ID
