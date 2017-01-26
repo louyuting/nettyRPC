@@ -19,7 +19,7 @@ public class MessageRecvHandler extends ChannelInboundHandlerAdapter {
     }
 
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        //获取MessageRequest
+        //这是获取到的msg已经经过JDK序列化的解码器了,只需要强转成MessageRequest
         MessageRequest request = (MessageRequest) msg;
         //new 一个 response
         MessageResponse response = new MessageResponse();

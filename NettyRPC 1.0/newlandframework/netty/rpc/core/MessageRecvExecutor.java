@@ -9,6 +9,7 @@ import newlandframework.netty.rpc.model.MessageKeyVal;
 import newlandframework.netty.rpc.model.MessageRequest;
 import newlandframework.netty.rpc.model.MessageResponse;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
+import newlandframework.netty.rpc.utils.LogUtil;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
@@ -35,7 +36,7 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
     private RpcSerializeProtocol serializeProtocol = RpcSerializeProtocol.JDKSERIALIZE;
     /** 分隔符 */
     private final static String DELIMITER = ":";
-    /** 服务端处理请求体的Map */
+    /** 服务端处理请求体映射的Map */
     private Map<String, Object> handlerMap = new ConcurrentHashMap<String, Object>();
     /** 线程执行器,单例 */
     private static ListeningExecutorService threadPoolExecutor;
@@ -49,6 +50,7 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
         this.serverAddress = serverAddress;
         this.serializeProtocol = Enum.valueOf(RpcSerializeProtocol.class, serializeProtocol);
     }
+
 
     /**
      * 提交任务
@@ -96,6 +98,7 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
     @Override
     public void setApplicationContext(ApplicationContext ctx) throws BeansException {
 
+        LogUtil.log_debug("setApplicationContext()");
 
         try {
             /**获取 MessageKeyVal 实例*/
@@ -125,9 +128,11 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
      */
     @Override
     public void afterPropertiesSet() throws Exception {
+        LogUtil.log_debug("执行afterPropertiesSet()");
+
         ThreadFactory threadRpcFactory = new NamedThreadFactory("NettyRPC ThreadFactory");
 
-        //获取机器的CPU数量 * 2 设置并行数
+        //获取机器的CPU数量 * 2 设置并行数,我的Mac是4核的.
         int parallel = Runtime.getRuntime().availableProcessors() * 2;
         /** 主从线程池,boss线程池是一个线程, worker线程池是parallel */
         EventLoopGroup boss = new NioEventLoopGroup();
@@ -143,14 +148,15 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
             String[] ipAddr = serverAddress.split(MessageRecvExecutor.DELIMITER);
 
             if (ipAddr.length == 2) {
+                //获取服务器IP地址和端口
                 String host = ipAddr[0];
                 int port = Integer.parseInt(ipAddr[1]);
                 /**异步启动服务器*/
                 ChannelFuture future = bootstrap.bind(host, port).sync();
-                System.out.printf("[author tangjie] Netty RPC Server start success!\nip:%s\nport:%d\nprotocol:%s\n\n", host, port, serializeProtocol);
+                System.out.printf("[author louyuting] Netty RPC Server start success!\nip:%s\nport:%d\nprotocol:%s\n\n", host, port, serializeProtocol);
                 future.channel().closeFuture().sync();
             } else {
-                System.out.printf("[author tangjie] Netty RPC Server start fail!\n");
+                System.out.printf("[author louyuting] Netty RPC Server start fail!\n");
             }
         } finally {
             worker.shutdownGracefully();

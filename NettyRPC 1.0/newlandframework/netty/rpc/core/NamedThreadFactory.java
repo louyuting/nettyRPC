@@ -12,9 +12,9 @@ public class NamedThreadFactory implements ThreadFactory {
     private static final AtomicInteger threadNumber = new AtomicInteger(1);
 
     private final AtomicInteger mThreadNum = new AtomicInteger(1);
-
+    //前缀
     private final String prefix;
-    /** 是否是后台线程 */
+    /** 是否是后台线程, 默认false不是后台线程 */
     private final boolean daemoThread;
     /** 线程组 */
     private final ThreadGroup threadGroup;
@@ -24,16 +24,14 @@ public class NamedThreadFactory implements ThreadFactory {
      * 构造器
      */
     public NamedThreadFactory() {
-        this("rpcserver-threadpool-" + threadNumber.getAndIncrement(), false);
+        this("rpc-server-threadpool-" + threadNumber.getAndIncrement(), false);
     }
-
     /**
      * 构造器
      */
     public NamedThreadFactory(String prefix) {
         this(prefix, false);
     }
-
     /**
      * 构造器
      */
@@ -57,7 +55,6 @@ public class NamedThreadFactory implements ThreadFactory {
         ret.setDaemon(daemoThread);
         return ret;
     }
-
 
     public ThreadGroup getThreadGroup() {
         return threadGroup;

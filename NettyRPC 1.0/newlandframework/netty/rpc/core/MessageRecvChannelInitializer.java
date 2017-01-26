@@ -22,12 +22,13 @@ public class MessageRecvChannelInitializer extends ChannelInitializer<SocketChan
 
     /**
      * 构造器
-     * @param handlerMap
+     * @param handlerMap 服务端request映射容器
      */
     MessageRecvChannelInitializer(Map<String, Object> handlerMap) {
         frame = new RpcRecvSerializeFrame(handlerMap);
     }
 
+    @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         ChannelPipeline pipeline = socketChannel.pipeline();
         frame.select(protocol, pipeline);

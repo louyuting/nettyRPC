@@ -38,16 +38,29 @@ public class RpcRecvSerializeFrame implements RpcSerializeFrame {
     public void select(RpcSerializeProtocol protocol, ChannelPipeline pipeline) {
         switch (protocol) {
             case JDKSERIALIZE: {
-                /** netty提供的默认解码器,解决TCP的黏包问题 */
+                //解码器 inbound 入站数据 解决TCP黏包问题
                 pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, MessageCodecUtil.MESSAGE_LENGTH, 0, MessageCodecUtil.MESSAGE_LENGTH));
-                /** netty提供的默认解码器 */
+                //编码器 outbound 出站数据
                 pipeline.addLast(new LengthFieldPrepender(MessageCodecUtil.MESSAGE_LENGTH));
-                /** netty提供的默认解码器,JDK原生序列化编解码器 */
+                //编码器 outbound 出站数据
                 pipeline.addLast(new ObjectEncoder());
+                //解码器 inbound 入站数据
                 pipeline.addLast(new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.weakCachingConcurrentResolver(this.getClass().getClassLoader())));
-                /** RPC 服务端的handler */
+                //解码器 inbound 入站数据
                 pipeline.addLast(new MessageRecvHandler(handlerMap));
                 break;
+
+                /**
+                 * 说明:
+                 * 服务端入站时:也就是接收从客户端来的数据字节时:调用的是:
+                 *      首先应该是解码器:LengthFieldBasedFrameDecoder-->ObjectDecoder-->MessageRecvHandler
+                 *      上面这三个handler都是继承自inbound
+                 *
+                 * 服务端出站时:也就是服务端发送字节数据到客户端时:调用的是:
+                 *      首先应该是编码器:LengthFieldPrepender-->ObjectEncoder
+                 *      上面这两个handler都是继承自outbound
+                 *
+                 */
             }
             case KRYOSERIALIZE: {
                 KryoCodecUtil util = new KryoCodecUtil(KryoPoolFactory.getKryoPoolInstance());

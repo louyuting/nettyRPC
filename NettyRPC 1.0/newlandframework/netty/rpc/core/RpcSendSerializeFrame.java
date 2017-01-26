@@ -25,12 +25,25 @@ public class RpcSendSerializeFrame implements RpcSerializeFrame {
     public void select(RpcSerializeProtocol protocol, ChannelPipeline pipeline) {
         switch (protocol) {
             case JDKSERIALIZE: {
+                //解码器 inbound 入站数据
                 pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, MessageCodecUtil.MESSAGE_LENGTH, 0, MessageCodecUtil.MESSAGE_LENGTH));
+                //编码器 outbound 出站数据
                 pipeline.addLast(new LengthFieldPrepender(MessageCodecUtil.MESSAGE_LENGTH));
+                //编码器 outbound 出站数据
                 pipeline.addLast(new ObjectEncoder());
+                //解码器 inbound 入站数据
                 pipeline.addLast(new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.weakCachingConcurrentResolver(this.getClass().getClassLoader())));
+                //解码器 inbound 入站数据
                 pipeline.addLast(new MessageSendHandler());
                 break;
+
+                /**
+                 * 入站数据, 即服务器接收客户端的字节数据--
+                 *      -->LengthFieldBasedFrameDecoder-->ObjectDecoder-->MessageSendHandler
+                 *
+                 * 出站数据, 即服务器向客户端发送字节数据--
+                 *      -->LengthFieldPrepender-->ObjectEncoder
+                 */
             }
             case KRYOSERIALIZE: {
                 KryoCodecUtil util = new KryoCodecUtil(KryoPoolFactory.getKryoPoolInstance());
