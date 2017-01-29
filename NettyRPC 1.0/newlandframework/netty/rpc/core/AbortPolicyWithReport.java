@@ -4,7 +4,7 @@ import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * 线程池异常策略
+ * 服务端: 线程池异常策略
  */
 public class AbortPolicyWithReport extends ThreadPoolExecutor.AbortPolicy {
 

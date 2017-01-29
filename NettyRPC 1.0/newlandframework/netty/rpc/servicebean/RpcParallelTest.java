@@ -70,9 +70,9 @@ public class RpcParallelTest {
 
         for (int i = 0; i < 10; i++) {
             JdkNativeParallelTask(executor, parallel);
-            KryoParallelTask(executor, parallel);
-            HessianParallelTask(executor, parallel);
-            System.out.printf("[author tangjie] Netty RPC Server 消息协议序列化第[%d]轮并发验证结束!\n\n", i);
+            //KryoParallelTask(executor, parallel);
+            //HessianParallelTask(executor, parallel);
+            System.out.printf("[author louyuting] Netty RPC Server 消息协议序列化第[%d]轮并发验证结束!\n\n", i);
         }
 
         executor.stop();

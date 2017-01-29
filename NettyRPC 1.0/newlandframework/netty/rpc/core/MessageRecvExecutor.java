@@ -38,19 +38,18 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
     private final static String DELIMITER = ":";
     /** 服务端处理请求体映射的Map */
     private Map<String, Object> handlerMap = new ConcurrentHashMap<String, Object>();
-    /** 线程执行器,单例 */
+    /** guava的线程执行器,单例 */
     private static ListeningExecutorService threadPoolExecutor;
 
     /**
      * 构造器
-     * @param serverAddress
-     * @param serializeProtocol
+     * @param serverAddress 服务器地址
+     * @param serializeProtocol 序列化协议
      */
     public MessageRecvExecutor(String serverAddress, String serializeProtocol) {
         this.serverAddress = serverAddress;
         this.serializeProtocol = Enum.valueOf(RpcSerializeProtocol.class, serializeProtocol);
     }
-
 
     /**
      * 提交任务
@@ -66,28 +65,54 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
         if (threadPoolExecutor == null) {
             synchronized (MessageRecvExecutor.class) {
                 if (threadPoolExecutor == null) {
+                    //将 ExecutorService 转为 ListeningExecutorService
                     threadPoolExecutor = MoreExecutors.listeningDecorator((ThreadPoolExecutor) RpcThreadPool.getExecutor(16, -1));
                 }
             }
         }
 
+        //提交任务, 异步获取结果
         ListenableFuture<Boolean> listenableFuture = threadPoolExecutor.submit(task);
 
+        //注册回调函数, 在task执行完之后 异步调用回调函数
         Futures.addCallback(listenableFuture, new FutureCallback<Boolean>() {
+            /**
+             * Future成功的时候执行，根据Future结果来判断。
+             *
+             * 当消息处理完成之后,再发送回客户端.
+             * @param result
+             */
             public void onSuccess(Boolean result) {
+                //为返回msg回客户端添加一个监听器,当消息成功发送回客户端时被异步调用.
                 ctx.writeAndFlush(response).addListener(new ChannelFutureListener() {
+                    /**
+                     * 服务端回显 request已经处理完毕
+                     * @param channelFuture
+                     * @throws Exception
+                     */
                     public void operationComplete(ChannelFuture channelFuture) throws Exception {
                         System.out.println("RPC Server Send message-id respone:" + request.getMessageId());
                     }
+
                 });
             }
 
+            /**
+             * Future失败的时候执行，根据Future结果来判断。
+             * @param t
+             */
             public void onFailure(Throwable t) {
                 t.printStackTrace();
             }
-        }, threadPoolExecutor);
+        }, threadPoolExecutor);// end of Futures.addCallback()
     }
 
+
+
+
+/**================================================================================================================*/
+//          下面的是Spring容器启动的时候调用的函数
+/**================================================================================================================*/
     /**
      * 当初始化Spring容器的时候会被调用, ApplicationContextAware包装接口中的方法在这里重载,
      * 在afterPropertiesSet()方法之前被调用.
@@ -163,4 +188,5 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
             boss.shutdownGracefully();
         }
     }
+
 }

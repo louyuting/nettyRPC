@@ -1,13 +1,3 @@
-/**
- * @filename:RpcServerLoader.java
- *
- * Newland Co. Ltd. All rights reserved.
- *
- * @Description:rpc服务器配置加载
- * @author tangjie
- * @version 1.0
- *
- */
 package newlandframework.netty.rpc.core;
 
 import com.google.common.util.concurrent.*;
@@ -23,9 +13,15 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * 客户端调用:rpc服务配置加载
+ *
+ * 这个类是单例的
+ */
 public class RpcServerLoader {
-    /** 单例 */
+    /** 单例获取loader */
     private volatile static RpcServerLoader rpcServerLoader;
+
     /** 服务器端地址IP和端口号分隔的符号 */
     private final static String DELIMITER = ":";
     /** 序列化的协议 */
@@ -35,7 +31,11 @@ public class RpcServerLoader {
     private final static int parallel = Runtime.getRuntime().availableProcessors() * 2;
 
     private EventLoopGroup eventLoopGroup = new NioEventLoopGroup(parallel);
+
+    /** 客户端 消息处理线程池 */
     private static ListeningExecutorService threadPoolExecutor = MoreExecutors.listeningDecorator((ThreadPoolExecutor) RpcThreadPool.getExecutor(16, -1));
+
+
     private MessageSendHandler messageSendHandler = null;
 
     /** 细粒度的可重入锁 */
@@ -51,7 +51,7 @@ public class RpcServerLoader {
     }
 
     /**
-     * DCL 实现单例模式
+     * DCL: 实现单例模式
      */
     public static RpcServerLoader getInstance() {
         if (rpcServerLoader == null) {
@@ -72,15 +72,18 @@ public class RpcServerLoader {
     public void load(String serverAddress, RpcSerializeProtocol serializeProtocol) {
         String[] ipAddr = serverAddress.split(RpcServerLoader.DELIMITER);
         if (ipAddr.length == 2) {
-            /** 获取IP */
+            //获取IP
             String host = ipAddr[0];
-            /** 获取端口号 */
+            //获取端口号
             int port = Integer.parseInt(ipAddr[1]);
-            /** 获取socket的完整地址 */
+            //获取socket的完整地址
             final InetSocketAddress remoteAddr = new InetSocketAddress(host, port);
 
-            ListenableFuture<Boolean> listenableFuture = threadPoolExecutor.submit(new MessageSendInitializeTask(eventLoopGroup, remoteAddr, serializeProtocol));
+            // 客户端提交task
+            ListenableFuture<Boolean> listenableFuture = threadPoolExecutor.submit(
+                    new MessageSendInitializeTask(eventLoopGroup, remoteAddr, serializeProtocol));
 
+            // 给listenableFuture 添加回调函数
             Futures.addCallback(listenableFuture, new FutureCallback<Boolean>() {
                 public void onSuccess(Boolean result) {
                     try {
@@ -103,10 +106,16 @@ public class RpcServerLoader {
                 public void onFailure(Throwable t) {
                     t.printStackTrace();
                 }
-            }, threadPoolExecutor);
+            }, threadPoolExecutor);// end of Futures.addCallback()
+
         }
     }
 
+
+    /**
+     *
+     * @param messageInHandler
+     */
     public void setMessageSendHandler(MessageSendHandler messageInHandler) {
         try {
             lock.lock();

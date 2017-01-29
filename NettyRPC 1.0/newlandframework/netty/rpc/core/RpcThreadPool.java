@@ -22,7 +22,7 @@ public class RpcThreadPool {
      *
      * @param threads 固定数量线程的线程池
      * @param queues 设置线程池工作队列,  0:同步队列
-     *                                 <0 无界队列
+     *                                 <0 无界队列 LinkedBlockingQueue
      *                                 >0 无界队列,指定了初始容量
      *
      * @return 返回指定了线程池之后的线程池执行器
@@ -36,3 +36,4 @@ public class RpcThreadPool {
                 new NamedThreadFactory(name, true), new AbortPolicyWithReport(name));
     }
 }
+

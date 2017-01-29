@@ -41,6 +41,10 @@ public class MessageRecvInitializeTask implements Callable<Boolean> {
         this.ctx = ctx;
     }
 
+    /**
+     * 这个才是服务端真正的消息处理函数
+     * @return
+     */
     public Boolean call() {
         response.setMessageId(request.getMessageId());
         try {
@@ -56,7 +60,7 @@ public class MessageRecvInitializeTask implements Callable<Boolean> {
     }
 
     /**
-     * 反射
+     * 反射机制, 执行请求中的方法, 并获取response中的 Object域也就是方法执行的结果
      * @param request
      * @return
      * @throws Throwable
@@ -73,4 +77,5 @@ public class MessageRecvInitializeTask implements Callable<Boolean> {
         //反射执行,获取resopnse的result
         return MethodUtils.invokeMethod(serviceBean, methodName, parameters);
     }
+
 }

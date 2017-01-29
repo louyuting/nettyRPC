@@ -10,12 +10,19 @@ public class MessageSendExecutor {
 
     private RpcServerLoader loader = RpcServerLoader.getInstance();
 
+    /**
+     * 构造器
+     */
     public MessageSendExecutor() {
-    }
 
-    public MessageSendExecutor(String serverAddress, RpcSerializeProtocol serializeProtocol) {
-        loader.load(serverAddress, serializeProtocol);
     }
+    /**
+     * 构造器
+     */
+    /*public MessageSendExecutor(String serverAddress, RpcSerializeProtocol serializeProtocol) {
+        loader.load(serverAddress, serializeProtocol);
+    }*/
+
 
     public void setRpcServerLoader(String serverAddress, RpcSerializeProtocol serializeProtocol) {
         loader.load(serverAddress, serializeProtocol);

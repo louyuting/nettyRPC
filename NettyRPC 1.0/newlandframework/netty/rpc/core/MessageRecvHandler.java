@@ -25,7 +25,7 @@ public class MessageRecvHandler extends ChannelInboundHandlerAdapter {
         MessageResponse response = new MessageResponse();
         // new 一个服务器消息处理线程
         MessageRecvInitializeTask recvTask = new MessageRecvInitializeTask(request, response, handlerMap);
-        // 提交给消息提交给服务端的线程池
+        // 将服务端的处理任务提交给服务端的 消息处理线程池
         MessageRecvExecutor.submit(recvTask, ctx, request, response);
     }
 
