@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64f8b578-a4c5-455d-9f22-616dea6493d0" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/servicebean/CalcParallelRequestThread.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/client/CalcParallelRequestThread.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/servicebean/RpcParallelTest.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/client/RpcParallelTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/servicebean/CalcParallelRequestThread.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/servicebean/CalcParallelRequestThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageCallBack.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageCallBack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvExecutor$1$1.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvExecutor$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvExecutor$1.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvExecutor$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvExecutor.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvExecutor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvInitializeTask.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageRecvInitializeTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendExecutor.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendExecutor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendHandler.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendInitializeTask$1.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendInitializeTask$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendInitializeTask.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendInitializeTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendProxy.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/MessageSendProxy.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/servicebean/RpcParallelTest.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/servicebean/RpcParallelTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/RpcServerLoader$1.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/RpcServerLoader$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/RpcServerLoader.class" afterPath="$PROJECT_DIR$/target/classes/newlandframework/netty/rpc/core/RpcServerLoader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageCallBack.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageCallBack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageRecvHandler.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageRecvHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendExecutor.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendHandler.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendInitializeTask.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendInitializeTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendProxy.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/NettyRPC Version 1.0.txt" afterPath="$PROJECT_DIR$/NettyRPC 1.0/NettyRPC Version 1.0.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NettyRPC Version 1.0.txt" afterPath="$PROJECT_DIR$/target/classes/NettyRPC Version 1.0.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcSendSerializeFrame.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcSendSerializeFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcServerLoader.java" afterPath="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/RpcServerLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NettyRPC.iws" />
@@ -78,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic7/ChiefTest.java" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic7/filter/Chief.java" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic7/filter/Fighter.java" />
         <option value="$PROJECT_DIR$/Spring/spring/spring/ch2/topic7/filter/MyComponent.java" />
@@ -129,6 +103,7 @@
         <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendProxy.java" />
         <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/core/MessageSendHandler.java" />
         <option value="$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/client/CalcParallelRequestThread.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -212,104 +187,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC 1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC 1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rpc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC 1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rpc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC 1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rpc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NettyRPC 1.0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rpc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -777,12 +654,12 @@
       <workItem from="1485269673900" duration="23009000" />
       <workItem from="1485612686124" duration="186000" />
       <workItem from="1485674000354" duration="7431000" />
-      <workItem from="1485745115770" duration="14604000" />
+      <workItem from="1485745115770" duration="15142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113858000" />
+    <option name="totallyTimeSpent" value="114396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -800,10 +677,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2732644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23295455" sideWeight="0.49483013" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23295455" sideWeight="0.49483013" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2747415" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13230519" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13230519" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17775974" sideWeight="0.50516987" order="2" side_tool="true" content_ui="tabs" />
@@ -884,13 +761,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35813954">
-          <caret line="57" column="51" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NettyRPC 1.0/newlandframework/netty/rpc/utils/LogUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.62015504">
@@ -1301,6 +1171,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6514161">
           <caret line="35" column="38" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43835616">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
