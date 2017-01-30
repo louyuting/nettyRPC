@@ -5,22 +5,16 @@ echo "-------------------------------------"
 echo "git add -A"
 git add -A
 
-echo "git commit -m 'spring'"
-git commit -m 'spring'
+echo "git commit -m 'NettyRPC'"
+git commit -m 'NettyRPC'
 
 echo "-------------------------------------"
-echo "fetch and merge"
+echo "fetch"
 git fetch origin master
+echo "merge"
 git merge origin/master
 
 echo "-------------------------------------"
 echo "push"
 git push origin master:master
-
-
-
-
-
-
-
-
+echo "[over]"
