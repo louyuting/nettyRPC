@@ -28,6 +28,7 @@ public class RpcSendSerializeFrame implements RpcSerializeFrame {
                 //解码器 inbound 入站数据
                 pipeline.addLast(new LengthFieldBasedFrameDecoder(Integer.MAX_VALUE, 0, MessageCodecUtil.MESSAGE_LENGTH, 0, MessageCodecUtil.MESSAGE_LENGTH));
                 //编码器 outbound 出站数据
+                //利用LengthFieldPrepender回填补充ObjectDecoder消息报文头
                 pipeline.addLast(new LengthFieldPrepender(MessageCodecUtil.MESSAGE_LENGTH));
                 //编码器 outbound 出站数据
                 pipeline.addLast(new ObjectEncoder());
@@ -38,10 +39,10 @@ public class RpcSendSerializeFrame implements RpcSerializeFrame {
                 break;
 
                 /**
-                 * 入站数据, 即服务器接收客户端的字节数据--
+                 * 入站数据, 客户端接收服务端发来的数据
                  *      -->LengthFieldBasedFrameDecoder-->ObjectDecoder-->MessageSendHandler
                  *
-                 * 出站数据, 即服务器向客户端发送字节数据--
+                 * 出站数据, 即客户端向服务端发送字节数据--
                  *      -->LengthFieldPrepender-->ObjectEncoder
                  */
             }

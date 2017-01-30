@@ -4,6 +4,7 @@ import com.google.common.util.concurrent.*;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
+import newlandframework.netty.rpc.utils.LogUtil;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -79,13 +80,19 @@ public class RpcServerLoader {
             //获取socket的完整地址
             final InetSocketAddress remoteAddr = new InetSocketAddress(host, port);
 
-            // 客户端提交task
+            //
             ListenableFuture<Boolean> listenableFuture = threadPoolExecutor.submit(
                     new MessageSendInitializeTask(eventLoopGroup, remoteAddr, serializeProtocol));
 
-            // 给listenableFuture 添加回调函数
+            // 给listenableFuture 添加回调函数,当MessageSendInitializeTask执行完毕之后调用
             Futures.addCallback(listenableFuture, new FutureCallback<Boolean>() {
+
+                /***
+                 * 与服务器建立连接后,等待本地messageSendHandler获取成功
+                 * @param result
+                 */
                 public void onSuccess(Boolean result) {
+                    LogUtil.log_debug("listenableFuture-->callback");
                     try {
                         lock.lock();
 
@@ -94,6 +101,7 @@ public class RpcServerLoader {
                         }
 
                         if (result == Boolean.TRUE && messageSendHandler != null) {
+
                             connectStatus.signalAll();
                         }
                     } catch (InterruptedException ex) {
@@ -126,17 +134,24 @@ public class RpcServerLoader {
         }
     }
 
+    /**
+     * 独占的获取 messageSendHandler
+     * @return
+     * @throws InterruptedException
+     */
     public MessageSendHandler getMessageSendHandler() throws InterruptedException {
         try {
             lock.lock();
+            //netty服务端链路没有建立完毕之前，先挂起等待
             if (messageSendHandler == null) {
-                connectStatus.await();
+                connectStatus.await();// 阻塞
             }
             return messageSendHandler;
         } finally {
             lock.unlock();
         }
     }
+
 
     public void unLoad() {
         messageSendHandler.close();

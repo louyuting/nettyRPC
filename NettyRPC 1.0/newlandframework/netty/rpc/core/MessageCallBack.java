@@ -34,6 +34,8 @@ public class MessageCallBack {
     public Object start() throws InterruptedException {
         try {
             lock.lock();//加锁
+            // 设定一下超时时间，rpc服务器太久没有相应的话，就默认返回空吧。
+            // 阻塞等待服务端处理结束, 返回response,这里会把锁释放.
             finish.await(10*1000, TimeUnit.MILLISECONDS);//阻塞,释放锁,等待信号
 
             //被唤醒之后
@@ -48,7 +50,7 @@ public class MessageCallBack {
     }
 
     /**
-     * over
+     * 当成功获取到response之后,会调用这个函数, 然后唤醒finish.await()
      * @param reponse
      */
     public void over(MessageResponse reponse) {

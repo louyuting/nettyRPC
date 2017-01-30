@@ -7,6 +7,7 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
+import newlandframework.netty.rpc.utils.LogUtil;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.Callable;
@@ -41,6 +42,8 @@ public class MessageSendInitializeTask implements Callable<Boolean> {
      */
     @Override
     public Boolean call() {
+        LogUtil.log_debug("MessageSendInitializeTask --> call()");
+
         Bootstrap b = new Bootstrap();
         b.group(eventLoopGroup)
                 .channel(NioSocketChannel.class)
@@ -59,6 +62,8 @@ public class MessageSendInitializeTask implements Callable<Boolean> {
              */
             public void operationComplete(final ChannelFuture channelFuture) throws Exception {
                 if (channelFuture.isSuccess()) {
+                    LogUtil.log_debug("当前客户端和服务器连接成功");
+                    //和服务器连接成功后, 获取MessageSendHandler对象
                     MessageSendHandler handler = channelFuture.channel().pipeline().get(MessageSendHandler.class);
                     RpcServerLoader.getInstance().setMessageSendHandler(handler);
                 }

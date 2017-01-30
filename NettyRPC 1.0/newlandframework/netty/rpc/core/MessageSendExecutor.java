@@ -32,6 +32,12 @@ public class MessageSendExecutor {
         loader.unLoad();
     }
 
+    /***
+     * 动态代理,获得代理后的对象
+     * @param rpcInterface
+     * @param <T>
+     * @return
+     */
     public static <T> T execute(Class<T> rpcInterface) {
         return (T) Reflection.newProxy(rpcInterface, new MessageSendProxy<T>());
     }
