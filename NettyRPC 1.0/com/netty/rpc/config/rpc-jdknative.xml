@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--配置扫描bean的包的路径-->
+    <context:component-scan base-package="com.netty.rpc.core"/>
+    <!--加载 properties 配置文件-->
+    <context:property-placeholder location="classpath:com/netty/rpc/config/rpc-server-jdknative.properties"/>
+
+    <!--配置bean-->
+    <bean id="rpcbean" class="com.netty.rpc.model.MessageKeyVal">
+        <!--注入属性-->
+        <property name="messageKeyVal">
+            <!--注入map集合-->
+            <map>
+                <entry key="com.netty.rpc.servicebean.Calculate">
+                    <ref bean="calc"/>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+
+    <bean id="calc" class="com.netty.rpc.servicebean.CalculateImpl"/>
+
+    <!--服务端执行模块的注入-->
+    <bean id="rpcServer" class="com.netty.rpc.core.MessageRecvExecutor">
+        <!--构造器注入属性值-->
+        <constructor-arg name="serverAddress" value="${rpc.server.addr}"/>
+        <constructor-arg name="serializeProtocol" value="JDKSERIALIZE"/>
+    </bean>
+
+</beans>
