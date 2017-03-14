@@ -10,6 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 客户端调用: Rpc消息回调
+ * @version 0.1
  */
 public class MessageCallBack {
 

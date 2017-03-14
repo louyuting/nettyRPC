@@ -8,7 +8,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * @Description:并发线程模拟
+ * @Description: 并发线程模拟
+ * @version 0.1
  */
 public class CalcParallelRequestThread implements Runnable {
 

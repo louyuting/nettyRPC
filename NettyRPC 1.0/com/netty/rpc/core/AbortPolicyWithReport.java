@@ -5,6 +5,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * 服务端: 线程池异常策略
+ * @version 0.1
  */
 public class AbortPolicyWithReport extends ThreadPoolExecutor.AbortPolicy {
 

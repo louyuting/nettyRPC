@@ -1,4 +1,4 @@
-package com.netty.rpc.core;
+package com.netty.rpc.server;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

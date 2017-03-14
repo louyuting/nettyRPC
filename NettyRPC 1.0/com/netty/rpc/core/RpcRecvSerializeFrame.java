@@ -3,13 +3,6 @@ package com.netty.rpc.core;
 import com.netty.rpc.serialize.support.MessageCodecUtil;
 import com.netty.rpc.serialize.support.RpcSerializeFrame;
 import com.netty.rpc.serialize.support.RpcSerializeProtocol;
-import com.netty.rpc.serialize.support.hessian.HessianCodecUtil;
-import com.netty.rpc.serialize.support.hessian.HessianDecoder;
-import com.netty.rpc.serialize.support.hessian.HessianEncoder;
-import com.netty.rpc.serialize.support.kryo.KryoCodecUtil;
-import com.netty.rpc.serialize.support.kryo.KryoDecoder;
-import com.netty.rpc.serialize.support.kryo.KryoEncoder;
-import com.netty.rpc.serialize.support.kryo.KryoPoolFactory;
 import io.netty.channel.ChannelPipeline;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
@@ -61,20 +54,6 @@ public class RpcRecvSerializeFrame implements RpcSerializeFrame {
                  *      上面这两个handler都是继承自outbound
                  *
                  */
-            }
-            case KRYOSERIALIZE: {
-                KryoCodecUtil util = new KryoCodecUtil(KryoPoolFactory.getKryoPoolInstance());
-                pipeline.addLast(new KryoEncoder(util));
-                pipeline.addLast(new KryoDecoder(util));
-                pipeline.addLast(new MessageRecvHandler(handlerMap));
-                break;
-            }
-            case HESSIANSERIALIZE: {
-                HessianCodecUtil util = new HessianCodecUtil();
-                pipeline.addLast(new HessianEncoder(util));
-                pipeline.addLast(new HessianDecoder(util));
-                pipeline.addLast(new MessageRecvHandler(handlerMap));
-                break;
             }
         }
     }

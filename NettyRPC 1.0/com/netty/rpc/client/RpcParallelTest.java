@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * rpc并发测试代码
+ * @version 0.1
  */
 public class RpcParallelTest {
     /**
@@ -64,41 +65,10 @@ public class RpcParallelTest {
         int parallel = 1000;
         MessageSendExecutor executor = new MessageSendExecutor();
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 5; i++) {
             JdkNativeParallelTask(executor, parallel);
-            //KryoParallelTask(executor, parallel);
-            //HessianParallelTask(executor, parallel);
-            System.out.printf("[author louyuting] Netty RPC Server 消息协议序列化第[%d]轮并发验证结束!\n\n", i);
+            System.out.printf("[[author louyuting]] netty RPC Server 消息协议序列化第[%d]轮并发验证结束!\n", i);
         }
-
         executor.stop();
-    }
-
-
-
-
-
-
-
-
-//========================================================================================================================================================
-//========================================================================================================================================================
-//========================================================================================================================================================
-    //Kryo序列化协议
-    public static void KryoParallelTask(MessageSendExecutor executor, int parallel) throws InterruptedException {
-        String serverAddress = "127.0.0.1:18888";
-        RpcSerializeProtocol protocol = RpcSerializeProtocol.KRYOSERIALIZE;
-        executor.setRpcServerLoader(serverAddress, protocol);
-        RpcParallelTest.parallelTask(executor, parallel, serverAddress, protocol);
-        TimeUnit.SECONDS.sleep(3);
-    }
-
-    //Hessian序列化协议
-    public static void HessianParallelTask(MessageSendExecutor executor, int parallel) throws InterruptedException {
-        String serverAddress = "127.0.0.1:18889";
-        RpcSerializeProtocol protocol = RpcSerializeProtocol.HESSIANSERIALIZE;
-        executor.setRpcServerLoader(serverAddress, protocol);
-        RpcParallelTest.parallelTask(executor, parallel, serverAddress, protocol);
-        TimeUnit.SECONDS.sleep(3);
     }
 }

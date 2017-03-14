@@ -12,7 +12,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 public enum RpcSerializeProtocol {
 
-    JDKSERIALIZE("jdknative"), KRYOSERIALIZE("kryo"), HESSIANSERIALIZE("hessian");
+    JDKSERIALIZE("jdknative");
 
     private String serializeProtocol;
     /**
